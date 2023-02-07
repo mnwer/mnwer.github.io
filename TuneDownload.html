@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="icon.png">
+<meta content="#000000" name="theme-color">
+<meta content="#000000" name="msapplication-navbutton-color">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style type="text/css">
+*{
+	box-sizing:border-box;
+	color:white;
+	font-family:metropolis;
+}
+@font-face{
+	font-family:metropolis;
+	src:url("font/Metropolis-Regular.otf");
+}
+body{
+	background:#010405;
+
+}
+header {
+	width:100%;
+	height:50px;
+	padding:10px;
+	position:fixed;
+	background:#090909;
+	font-size:25px;
+	left:0;
+	top:0;
+}
+
+header span{
+	margin-right:10px;
+
+}
+
+header+*{
+	margin-top:53px;
+
+}
+.wallpaper {
+	width:105%;
+	height:500px;
+	margin-left:-10px;
+	margin-top:45px;
+	z-index:-100;
+}
+
+.slogan{
+	width:100%;
+	height:100px;
+	text-align:center;
+	font-size:30px;
+	margin-top:-55px;
+	font-weight:bolder;
+	padding-top:20px;
+	margin-bottom:30px;
+	background:linear-gradient(#010405,rgba(0,0,0,0));
+}
+#projects{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	height:400px;
+}
+.item:hover .number{
+	background:#303030;
+	color:white;
+}
+.number{
+	width:100px;
+	padding:15px;
+	background:white;
+	color:black;
+	text-align:center;
+	font-size:40px;
+	margin:auto;
+	border-radius:50%;
+	transition:all 0.2s;
+}
+.item{
+	width:100%;
+	display:none;
+	margin-bottom:50px;	
+	animation:show 0.6s;
+}
+.content{
+	width:120%;
+	margin:10px;
+	margin-top:-17px;
+}
+
+@keyframes show{
+	from{
+		margin-left:-100%;
+		opacity:0;
+	}
+	to{
+		margin-left:0;
+		opacity:1;
+	}
+}
+#containner{
+	width:100%;
+
+}
+
+.download{
+	background:white;
+	padding:10px;
+	color:black;
+	width:150px;
+	margin:auto;
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	border-radius:10px;
+
+}
+</style>
+
+
+<title>New Age</title>
+</head>
+<body>
+<header>New Age</header>
+<main>
+	<p>Download and install now!</p>
+	<div id="containner">
+		<a href="Tune.apk" ><div class="download" >Download</div></a>
+	</div>
+</main>
