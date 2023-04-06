@@ -1,174 +1,110 @@
-<!--
-	This was code by Mnwer AEK from New Age
--->
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta content="#121212" name="theme-color">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="three js/three.js"></script>
+	<script src="three js/OrbitControls.js"></script>
+	<script src="three js/GLTFLoader.js"></script>
+	<script src="js/3d.js"></script>
+	<script src="js/jquery.js"></script>
+	<style type="text/css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style type="text/css">
-	*{
-		box-sizing:border-box;
-		color:white;
-		font-family:metropolis;
-	}
-	@font-face{
-		font-family:metropolis;
-		src:url("font/Metropolis-Regular.otf");
-	}
-	body{
-		background:#010405;
-
-	}
-	header {
-		width:100%;
-		height:50px;
-		padding:10px;
-		position:fixed;
-		background:#090909;
-		font-size:25px;
-		left:0;
-		top:0;
-	}
-	
-	header span{
-		margin-right:10px;
-
-	}
-	
-	.wallpaper {
-		width:105%;
-		height:500px;
-		margin-left:-10px;
-		margin-top:45px;
-		z-index:-100;
-	}
-	
-	.slogan{
-		width:100%;
-		height:100px;
-		text-align:center;
-		font-size:30px;
-		margin-top:-55px;
-		font-weight:bolder;
-		padding-top:20px;
-		margin-bottom:30px;
-		background:linear-gradient(#010405,rgba(0,0,0,0));
-	}
-	#projects{
-		width:100%;
-		display:flex;
-		flex-direction:column;
-		height:400px;
-	}
-	.item:hover .number{
-		background:#303030;
-		color:white;
-	}
-	.number{
-		width:100px;
-		padding:15px;
-		background:white;
-		color:black;
-		text-align:center;
-		font-size:40px;
-		margin:auto;
-		border-radius:50%;
-		transition:all 0.2s;
-	}
-	.item{
-		width:100%;
-		display:none;
-		margin-bottom:50px;	
-		animation:show 0.6s;
-	}
-	.content{
-		width:120%;
-		margin:10px;
-		margin-top:-17px;
-	}
-	
-	@keyframes show{
-		from{
-			margin-left:-100%;
-			opacity:0;
-		}
-		to{
-			margin-left:0;
-			opacity:1;
-		}
-	}
-a{
-	text-decoration:none;
-	
-
-}
-</style>
-<title></title>
+	</style>
+<title>Mnwer</title>
 </head>
 <body>
-	<header><span onclick="showMenu()">&#9776</span>New Age</header>
-	<img class="wallpaper" src="img/wall.png">
-	<div class="slogan">” We go forward ”</div>
-	<h3>About us :</h3>
-
-	<div>
-		we are a company that make and develop android apps and games,currently we focus on web and android but we will develop also for windows and IOS soon .
+	<div id="center">
+	<div style="margin:auto; text-align:center;">
+	<span>Loading...</span>
+	<div id="container">
+		<div style="animation-delay:0.5s;"></div>
+		<div></div>
 	</div>
-	<h3>Projects :</h3>
-	<div id="projects">
+	</div>
+	</div>
 	
-		<a href="TuneDownload.html" class="item">
-			<div class="number">1</div>
-			<div class="content">
-				<h3>Tune </h3>
-				<div class="description">An android music player that allow you to play music anytime.</div>
-			</div>
-		</a>
-		
-		<div class="item">
-			<div class="number">2</div>
-			<div class="content">
-				<h3>Photon</h3>
-				<div class="description">An assistant that can help you very much and do a lot of help.</div>
+	<header>Mnwer</header>
+		<div id="top">
+			<div id="text">
+				<div id="title"></div>
+				<div id="description"></div>
+				<div id="sub"><a target="_blanck" href="https://github.com/mnwer" ><button>Follow me</button></a></div>
 			</div>
 		</div>
 		
-		<div class="item">
-			<div class="number">3</div>
-			<div class="content">
-				<h3>News 4U</h3>
-				<div class="description">this app let you know the news from 8000 source just for you.</div>
+		<h2>My latest projects:</h2><br><br>
+		
+		<div id="slideShow">
+			<div id="content">
+				<div id="numbers">
+					<div>3</div>
+					<div>2</div>
+					<div>1</div>
+				</div>
+				<div id="slideText">
+					<div>
+						<h3>Tune</h3>
+						&nbsp;&nbsp;&nbsp;An android music player that allow you to play music anytime.
+					
+					</div>
+					
+					<div>
+						<h3>Delta</h3>
+						&nbsp;&nbsp;&nbsp;Meet new people and stay connected with your friends.
+					
+					</div>
+					
+					<div>
+						<h3>Karl</h3>
+						&nbsp;&nbsp;&nbsp;Unbeatable AI in tic tac toe game with minimax algorithm.
+					
+					</div>
+						
+				</div>
+				
 			</div>
+			<div id="controls">
+				<div onclick="slide(-1)" style="margin-left:0;"><span>&#10094;</span></div>
+				
+				<div onclick="slide(1)" style="margin-right:0;"><span>&#10095;</span></div>
+			</div>
+		
 		</div>
-			
-	</div>
-	
+		
+		<footer>
+			<a target="_blank"  href="https://www.facebook.com" >Facebook</a><br>
+			<a target="_blank" href="https://www.instagram.com" >Instagram</a><br>
+			<a target="_blank" href="https://www.Twitter.com" >Twitter</a><br>
+			<br>
+			All right reserved  ©
+		
+		</footer>
 	<script type="text/javascript">
-		var showing
-		item=0
-		isShowing=true
-		window.addEventListener("scroll",show)
-		
-		function show(){
-
-			if(window.scrollY>document.getElementById("projects").getBoundingClientRect().top-700){
-				if(isShowing){
-					showing=setInterval(showItem,600)
-					isShowing=false
-				}
+	function addText(parent,text){
+		for(i=0;i<text.length;i++){
+			span=document.createElement("span")
+			span.textContent=text[i]
+			if(text[i]==" "){
+				span.textContent="l"
+				span.style.color="transparent"
 			}
+			span.className="float"
+			span.style.animationDelay=i*0.07+"s"
+			parent.appendChild(span)
+			
 		}
+		document.getElementById("description").innerHTML="<h5 style='animation-delay:1s;'>Web developer</h5><h5 style='animation-delay:1.4s;'>UI designer</h5><h5 style='animation-delay:1.8s;'>UX designer</h5>"
 		
-		function showItem(){
-			document.getElementById("projects").children[item].style.display="flex"
-			item++
-			if(item==3){
-				clearInterval(showing)
-			}
-		}
+	}
+	
+	document.body.onload=function(){document.getElementById("top").appendChild(renderer.domElement)}
+	document.getElementById("numbers").scrollTop=10000
+	function slide(val){
+		$("#numbers").animate({scrollTop:document.getElementById("numbers").scrollTop-130*val},300)
+		$("#slideText").animate({scrollTop:document.getElementById("slideText").scrollTop+140*val},300)
+	}
 	</script>
 </body>
 </html>
