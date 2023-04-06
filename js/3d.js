@@ -20,7 +20,7 @@ light.position.set(0,0,-10);
 scene.add(light);
 
 gltf=new THREE.GLTFLoader()
-gltf.load("robot_playground.glb",function(obj){
+gltf.load("models/robot_playground.glb",function(obj){
 	obj.scene.position.set(0,0,-5)
 	camera.lookAt(0,0.5,-5)
 	scene.add(obj.scene)
